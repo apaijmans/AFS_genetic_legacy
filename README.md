@@ -3,6 +3,7 @@
 ## Overview
 
 This is the workflow used in the paper "The genetic legacy of extreme exploitation in a polar vertebrate" (LINK).
+The raw microsatellite data are available via the Zenodo repository, doi:10.5281/zenodo.3585717.
 
 To run the analyses, 
 
