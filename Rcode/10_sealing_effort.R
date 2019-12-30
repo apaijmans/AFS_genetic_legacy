@@ -16,7 +16,7 @@ library(extrafont)
 #~~ Load data
 
 # To load all sheets in a workbook, use lapply
-path <- paste("Docs/Historical info/Scans Headland 2009/Headland histrograms.xlsx")
+path <- paste("Data/Headland histograms.xlsx")
 files <- lapply(excel_sheets(path), read_excel, path = path, range=cell_cols("A:C"))
 
 files2 <- lapply(files, function(x) x[-1,]) # in excel I added a first and last entry to each sheet to make nicer graphs. here I want to remove them again, starting with removing the first rows in each dataframe in the last
