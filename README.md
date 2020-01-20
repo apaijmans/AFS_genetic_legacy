@@ -36,18 +36,35 @@ $$$$ UNDER CONSTRUCTION $$$$
 
 (1) Folder "Trop_Gaz": in this STRUCTURE run we included all the data, so A. gazella, A. tropicalis and potential hybrids. We used a two population model (i.e. k = 2) to classify individuals that were admixed with at least 10% of the genetic attribution being to the secondary species (i.e. 0.10 ≤ q ≤ 0.9).
 - 1c_run_structure: script to run STRUCTURE on the server
-- 1d_parse_structure: Parse and plot STRUCTURE output (fig S11)
+- 1d_parse_structure: parse and plot STRUCTURE output (fig S11)
 - 1e_extract_hyb: get a list of hybrids identified as described above
 
 (2) Folder "Trop_Gaz": in this STRUCTURE run we included only A. gazella individuals
 - 3b_run_structure: script to run STRUCTURE on the server
-- 3c_parse_structure: Parse and plot STRUCTURE output (input fig 1, fig S1, S2)
+- 3c_parse_structure: parse and plot STRUCTURE output (input fig 1, fig S1, S2)
 
 ### Within the folder "ABC" the following scripts can be found:
 
+(1) Folder "fsc_cluster2019": simulations compared to emperical data on the level of genetic clusters
+- a_prep_emp_data_5cluster: prepping emperical data
+- b_sumstats_5cluster: calculating summary statistics from emperical data on genetic cluster level
+- 1_simulate_diversity: simulates genetic diversity
+- 2_ABCanalysis: ABC analysis part 1, Model selection and evaluation
+- 3_ABCanalysis_posterior_distributions: ABC analysis part 2, Parameter estimation
+-	4_abc_results: save ABC estimates to RData file
+-	5_cv_eval_plots_FigS8: cross-validation plots (fig S8)
+-	6_one_plot_Fig3: creates Fig 3 
+-	7_posterior_predictive_checks: simulations for posterior predictive checks
+-	8_posterior_predictive_plots_FigS7: creates figure for posterior predictive checks (Fig S7)
+-	9_simulating_diversity_diff_Ne_Fig4a-c: simulations to calculate diversity loss using different Ne and plots (Fig 4a-c)
+- 10_simulations_heatmap: simulations to calculate diversity loss using different Nebot size and duration
+- 11_plotting_heatmap_Fig4d: creates heatmap (Fig 4d)
+- Supp_conf_mat_plot_FigS6: confusion matrix plot (Fig S6)
+-	Supp_density_plot_nehist_FigS9: density plots for Nehist (Fig S9)
 
+(2) Folder "fsc_pop2019": simulations compared to emperical data on the level of populations (locality)
 
-
+(3) Folder "":
 
 In addition, we slightly altered some specific functions of the package sealABC
 devtools::install_github("mastoffel/sealABC")  
