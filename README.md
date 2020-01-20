@@ -64,9 +64,11 @@ $$$$ UNDER CONSTRUCTION $$$$
 
 (2) Folder "fsc_pop2019": simulations compared to emperical data on the level of populations (locality)
 
-(3) Folder "":
+(3) Folder "sumstats_species": 
+- sumstats_species: calculates summary statistics for other otariid species 
+- compare_species_beeswarm_FigS5: creates plot showing allelic richness for all otariids (Fig S5)
 
-In addition, we slightly altered some specific functions of the package sealABC
-devtools::install_github("mastoffel/sealABC")  
-  
+In addition, we slightly altered some specific functions of the package sealABC (devtools::install_github("mastoffel/sealABC"))
+For this the script: mssumstatsAP is needed. This script can be found in all folders where it is used.
+
 The code is highly specific to the current analysis and probably has to be modified to be of use in other projects.
