@@ -5,11 +5,15 @@
 This is the workflow used in the paper "The genetic legacy of extreme exploitation in a polar vertebrate" (LINK).
 The raw microsatellite data are available via the Zenodo repository, doi:10.5281/zenodo.3585717.
 
-To run the analyses, please download the complete folder. The folder named "Rcode" contains the 1st part of the analysis divided into 14 scripts, which are named 1_ to 10_ . These scripts can be run a standard desktop machine.
+To run the analyses, please download the complete folder. The folder named "Rcode" contains 14 scripts, which are named 1_ to 10_ . These scripts can be run a standard desktop machine.
 
 Some of the analyses are computationally intensive. This is the case for the STRUCTURE analyses (scripts and data can be found in the folder "STRUCTURE") and the bottleneck analyses (scripts and data can be found in the folder "ABC"). The scripts in these folders should run on a server with sufficient computing power and memory.   
 
-Datasets which are produced along the way are already saved in data/ , so that the analysis can be started at any point. 
+Datasets which are produced along the way are already saved in subfolders, so that the analysis can be started at any point. 
+
+In some cases data needed to be transformed from STRUCTURE files to genepop files. This was done using PGD Spider and the .spid file is also given in this repository.
+
+Finally, .bat files were used for mass conversion of files (see also script 9a_BOTTLENECK_in), also these .bat files are given in this repository.
 
 ## Details
 
