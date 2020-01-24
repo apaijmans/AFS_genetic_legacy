@@ -9,13 +9,13 @@ To run the analyses, please download the complete folder. The folder named "Rcod
 
 Some of the analyses are computationally intensive. This is the case for the STRUCTURE analyses (scripts and data can be found in the folder "STRUCTURE") and the bottleneck analyses (scripts and data can be found in the folder "ABC"). The scripts in these folders should run on a server with sufficient computing power and memory.   
 
-Most datasets which are produced along the way are already saved in subfolders, so that the analysis can be started at any point. In some cases the resulting file size was too large and could not be included here. They are, however, available upon request.
+Most datasets which are produced along the way are already saved in subfolders, so that the analysis can be started at any point. In some cases the file size was too large and the file could not be included here. These files are available upon request.
 
-In some cases data needed to be transformed from STRUCTURE files to genepop files. This was done using PGD Spider and the .spid file is also given in this repository.
+In some cases, data needed to be transformed from STRUCTURE files to genepop files. This was done using PGD Spider and the .spid file is also given in this repository.
 
 Finally, .bat files were used for mass conversion of files (see also script 9a_BOTTLENECK_in), also these .bat files are given in this repository.
 
-## Details
+## Basic statistics and PCA
 
 ### Within the folder "Rcode" the following scripts can be found:
 
@@ -33,6 +33,8 @@ Finally, .bat files were used for mass conversion of files (see also script 9a_B
 - 9a_BOTTLENECK_in: creates 1000 subsets of randomly drawn individuals for analysis with BOTTLENECK software
 - 9b_BOTTLENECK_out: reads 1000 results of BOTTLENECK software and gets prop het ex values (input for fig 3 and fig S4)
 - 10_sealing_effort: sealing effort (fig 1)
+
+## STRUCTURE analysis
 
 ### Within the folder "STRUCTURE" the following scripts can be found:
 
