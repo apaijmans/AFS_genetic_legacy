@@ -3,13 +3,13 @@
 ## Overview
 
 This is the workflow used in the paper "The genetic legacy of extreme exploitation in a polar vertebrate" (LINK).
-The raw microsatellite data are available via the Zenodo repository, doi:10.5281/zenodo.3585717.
+The raw microsatellite data are available via the Zenodo repository, https://doi.org/10.5281/zenodo.3585717.
 
 To run the analyses, please download the complete folder. The folder named "Rcode" contains 14 scripts, which are named 1_ to 10_ . These scripts can be run a standard desktop machine.
 
 Some of the analyses are computationally intensive. This is the case for the STRUCTURE analyses (scripts and data can be found in the folder "STRUCTURE") and the bottleneck analyses (scripts and data can be found in the folder "ABC"). The scripts in these folders should run on a server with sufficient computing power and memory.   
 
-Datasets which are produced along the way are already saved in subfolders, so that the analysis can be started at any point. 
+Most datasets which are produced along the way are already saved in subfolders, so that the analysis can be started at any point. In some cases the resulting file size was too large and could not be included here. They are, however, available upon request.
 
 In some cases data needed to be transformed from STRUCTURE files to genepop files. This was done using PGD Spider and the .spid file is also given in this repository.
 
@@ -79,6 +79,6 @@ Finally, .bat files were used for mass conversion of files (see also script 9a_B
 - compare_species_beeswarm_FigS5: creates plot showing allelic richness for all otariids (Fig S5)
 
 In addition, we slightly altered some specific functions of the package sealABC (devtools::install_github("mastoffel/sealABC"))
-For this the script: mssumstatsAP is needed. This script can be found in all folders where it is used.
+For this the script: mssumstatsAP is needed in addition to the sealABC package. The script can be found in all folders where it is used.
 
 The code is highly specific to the current analysis and probably has to be modified to be of use in other projects.
