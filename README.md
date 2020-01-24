@@ -17,8 +17,6 @@ Finally, .bat files were used for mass conversion of files (see also script 9a_B
 
 ## Details
 
-$$$$ UNDER CONSTRUCTION $$$$
-
 ### Within the folder "Rcode" the following scripts can be found:
 
 - 1a_prep_data_ALL: prepping data for STRUCTURE
@@ -52,10 +50,10 @@ $$$$ UNDER CONSTRUCTION $$$$
 (1) Folder "fsc_cluster2019": simulations compared to emperical data on the level of genetic clusters
 - a_prep_emp_data_5cluster: prepping emperical data
 - b_sumstats_5cluster: calculating summary statistics from emperical data on genetic cluster level
-- 1_simulate_diversity: simulates genetic diversity
+- 1_simulate_diversity: simulates genetic diversity (nb the resulting file is not included on GitHub as the file size was too big. However it is available upon request)
 - 2_ABCanalysis: ABC analysis part 1, Model selection and evaluation
 - 3_ABCanalysis_posterior_distributions: ABC analysis part 2, Parameter estimation
--	4_abc_results: save ABC estimates to RData file
+-	4_abc_results: save ABC estimates to RData file (nb not all resulting files are included on GitHub as the file size was too big. However they are available upon request)
 -	5_cv_eval_plots_FigS8: cross-validation plots (fig S8)
 -	6_one_plot_Fig3: creates Fig 3 
 -	7_posterior_predictive_checks: simulations for posterior predictive checks
@@ -67,6 +65,14 @@ $$$$ UNDER CONSTRUCTION $$$$
 -	Supp_density_plot_nehist_FigS9: density plots for Nehist (Fig S9)
 
 (2) Folder "fsc_pop2019": simulations compared to emperical data on the level of populations (locality)
+- a_prep_emp_data_8pop: prepping emperical data
+- b_sumstats_8pop: calculating summary statistics from emperical data on genetic cluster level
+- 1_simulate_diversity: simulates genetic diversity (nb the resulting file is not included on GitHub as the file size was too big. However it is available upon request)
+- 2_ABCanalysis: ABC analysis part 1, Model selection and evaluation
+- 3_ABCanalysis_posterior_distributions: ABC analysis part 2, Parameter estimation
+-	4_abc_results: save ABC estimates to RData file (nb not all resulting files are included on GitHub as the file size was too big. However they are available upon request)
+-	5_cv_eval_plots: cross-validation plots
+-	6_one_plot_FigS4: creates Fig S4 
 
 (3) Folder "sumstats_species": 
 - sumstats_species: calculates summary statistics for other otariid species 
