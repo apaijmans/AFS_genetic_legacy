@@ -45,6 +45,32 @@ Finally, .bat files were used for mass conversion of files (see also script 9a_B
 - 3b_run_structure: script to run STRUCTURE on the server
 - 3c_parse_structure: parse and plot STRUCTURE output (input fig 1, fig S1, S2)
 
+## Coalescent-simulations and ABC analysis.
+The scripts contained in the ABC folders were used to simulate genetic data under 
+a bottleneck and a neutral demographic scenario using `strataG` as an interface
+to [fastsimcoal2](http://cmpg.unibe.ch/software/fastsimcoal2/). These data
+were then used for ABC analyses across genetic clusters/populations. 
+
+### Prerequisites
+
+(1) These script should be run on a multi-core machine, optimally using around 20
+or more cores. However, everything can run quickly for testing purposes based
+on a small number of simulations (say 1000 instead of 20000000)
+
+(2) Install fastsimcoal2 and check using the [strataG](https://cran.r-project.org/web/packages/strataG/index.html) vignette
+that the package can access fastsimcoal.
+
+(3) Several other packages need to be installed, which are mentioned in the scripts.
+Among them is a small package specifically written for the analysis of this paper,
+the `sealABC` package, which can be install from GitHub with:
+
+```
+devtools::install_github("mastoffel/sealABC")
+```
+
+In addition, we slightly altered some specific functions of the package sealABC.
+For this the script: mssumstatsAP is needed (in addition to the sealABC package). This script can be found in all folders where it is used.
+
 ### Within the folder "ABC" the following scripts can be found:
 
 (1) Folder "fsc_cluster2019": simulations compared to emperical data on the level of genetic clusters
@@ -78,7 +104,5 @@ Finally, .bat files were used for mass conversion of files (see also script 9a_B
 - sumstats_species: calculates summary statistics for other otariid species 
 - compare_species_beeswarm_FigS5: creates plot showing allelic richness for all otariids (Fig S5)
 
-In addition, we slightly altered some specific functions of the package sealABC (devtools::install_github("mastoffel/sealABC"))
-For this the script: mssumstatsAP is needed in addition to the sealABC package. The script can be found in all folders where it is used.
 
 The code is highly specific to the current analysis and probably has to be modified to be of use in other projects.
