@@ -70,8 +70,8 @@ the `sealABC` package, which can be install from GitHub with:
 devtools::install_github("mastoffel/sealABC")
 ```
 
-In addition, we slightly altered some specific functions of the package sealABC.
-For this the script: mssumstatsAP is needed (in addition to the sealABC package). This script can be found in all folders where it is used.
+In addition, we slightly altered some specific functions of the package `sealABC`.
+For this the script: mssumstatsAP is needed (in addition to the `sealABC` package). This script can be found in all folders where it is used.
 
 ### Within the folder "ABC" the following scripts can be found:
 
