@@ -46,9 +46,8 @@ num_pop <- 5
 
 num_sum_stats <- 3
 
-# do a cross validation for the abc parameters? ?cv4abc
-#calc_cv_for_abc <- TRUE
-# if yes, which method?
+# do a cross validation for the abc parameters ?cv4abc
+# which method?
 method_cv <- "rejection"      # "rejection"    # "loclinear"
 # how many pseudo-observed datasets should be evaluated? (value given in multiples of 5)
 nval_cv <- 1000
@@ -233,7 +232,7 @@ for (i in 1:num_pop) {
     par_mod <- subset(sims_param, subset = models == mod)
     
     abc_est <- abc(target = all_sumstats_full[i,], param = par_mod, 
-                   sumstat = stat_mod, tol = tol_abc, method = all_methods) #had to change tol_abc to 0.5 otherwise error?
+                   sumstat = stat_mod, tol = tol_abc, method = all_methods) 
     
     save(abc_est, file = paste0("abc_estimates/abc_", sim_name,"_",mod,"_",all_pops[i], "_", num_sum_stats, ".RData"))
     
@@ -248,7 +247,7 @@ for (i in 1:num_pop) {
     par_mod <- subset(sims_param, subset = models == mod)
     
     abc_est <- abc(target = all_sumstats_full[i,], param = par_mod, 
-                   sumstat = stat_mod, tol = tol_abc, method = all_methods) #had to change tol_abc to 0.5 otherwise error?
+                   sumstat = stat_mod, tol = tol_abc, method = all_methods) 
     
     save(abc_est, file = paste0("abc_estimates/abc_", sim_name,"_",mod,"_",all_pops[i], "_", num_sum_stats, ".RData"))
   }
