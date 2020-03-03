@@ -32,17 +32,17 @@ t <- data.table::rbindlist(files3, idcol=T)
 # replace id with sealing ground
 colnames(t)[1] <- "sealing.ground"
 
-t$sealing.ground <- gsub(1, "South Georgia & South Sandwich", t$sealing.ground)
+t$sealing.ground <- gsub(1, "South Georgia & South Sandwich Islands", t$sealing.ground)
 t$sealing.ground <- gsub(2, "South Shetlands & South Orkneys", t$sealing.ground)
-t$sealing.ground <- gsub(3, "Macquarie Island, Auckland & Campbell", t$sealing.ground)
-t$sealing.ground <- gsub(4, "Prince Edward, Marion & Crozet Island", t$sealing.ground)
-t$sealing.ground <- gsub(5, "Kerguelen Island & Heard Island", t$sealing.ground)
+t$sealing.ground <- gsub(3, "Macquarie Island, Auckland & Campbell Islands", t$sealing.ground)
+t$sealing.ground <- gsub(4, "Prince Edward, Marion & Crozet Islands", t$sealing.ground)
+t$sealing.ground <- gsub(5, "Kerguelen Islands & Heard Island", t$sealing.ground)
 
 t$sealing.ground <- ordered(t$sealing.ground, levels=c("South Shetlands & South Orkneys",
-                                                       "South Georgia & South Sandwich",
-                                                       "Prince Edward, Marion & Crozet Island",
-                                                       "Kerguelen Island & Heard Island", 
-                                                       "Macquarie Island, Auckland & Campbell"))
+                                                       "South Georgia & South Sandwich Islands",
+                                                       "Prince Edward, Marion & Crozet Islands",
+                                                       "Kerguelen Islands & Heard Island", 
+                                                       "Macquarie Island, Auckland & Campbell Islands"))
 
 
 # Define colours
@@ -54,15 +54,15 @@ source("Rcode/martin.R")
 # Dataframe for titles for each graph with geom_text
 dat_text <- data.frame(
   labs = c("(a) South Shetlands & South Orkneys", 
-           "(b) South Georgia & South Sandwich", 
-           "(c) Prince Edward, Marion & Crozet Island",
-           "(d) Kerguelen Island & Heard Island", 
-           "(e) Macquarie Island, Auckland & Campbell"),
+           "(b) South Georgia & South Sandwich Islands", 
+           "(c) Prince Edward, Marion & Crozet Islands",
+           "(d) Kerguelen Islands & Heard Island", 
+           "(e) Macquarie Island, Auckland & Campbell Islands"),
   sealing.ground   = c("South Shetlands & South Orkneys", 
-                       "South Georgia & South Sandwich",
-                       "Prince Edward, Marion & Crozet Island",
-                       "Kerguelen Island & Heard Island", 
-                       "Macquarie Island, Auckland & Campbell"))
+                       "South Georgia & South Sandwich Islands",
+                       "Prince Edward, Marion & Crozet Islands",
+                       "Kerguelen Islands & Heard Island", 
+                       "Macquarie Island, Auckland & Campbell Islands"))
 
 # Plot figure
 p_sealing <- ggplot(t, aes(year, vessels), fill = sealing.ground) +
