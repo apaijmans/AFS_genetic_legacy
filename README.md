@@ -1,8 +1,8 @@
-# Analysis workflow for "The genetic legacy of extreme exploitation in a polar vertebrate", Paijmans et al.
+# Analysis workflow for "The genetic legacy of extreme exploitation in a polar vertebrate", Paijmans et al. Sci Rep 10, 5089 (2020)
 
 ## Overview
 
-This is the workflow used in the paper "The genetic legacy of extreme exploitation in a polar vertebrate" (LINK).
+This is the workflow used in the paper ["The genetic legacy of extreme exploitation in a polar vertebrate"](https://doi.org/10.1038/s41598-020-61560-8).
 The raw microsatellite data are available via the Zenodo repository, https://doi.org/10.5281/zenodo.3585717.
 
 To run the analyses, please download the complete folder. The folder named "Rcode" contains 14 scripts, which are named 1_ to 10_ . These scripts can be run a standard desktop machine.
@@ -11,7 +11,7 @@ Some of the analyses are computationally intensive. This is the case for the STR
 
 Most datasets which are produced along the way are already saved in subfolders, so that the analysis can be started at any point. In some cases the file size was too large and the file could not be included here. These files are available upon request.
 
-In some cases, data needed to be transformed from STRUCTURE files to genepop files. This was done using PGD Spider and the .spid file is also given in this repository.
+In some cases, data needed to be transformed from STRUCTURE files to genepop files. This was done using [PGD Spider](http://www.cmpg.unibe.ch/software/PGDSpider/) and the .spid file is also given in this repository.
 
 Finally, .bat files were used for mass conversion of files (see also script 9a_BOTTLENECK_in), also these .bat files are given in this repository.
 
