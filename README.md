@@ -3,7 +3,7 @@
 ## Overview
 
 This is the workflow used in the paper ["The genetic legacy of extreme exploitation in a polar vertebrate"](https://doi.org/10.1038/s41598-020-61560-8).
-The raw microsatellite data are available via the Zenodo repository: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4609701.svg)](https://doi.org/10.5281/zenodo.3585717)
+The raw microsatellite data are available via the Zenodo repository: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3585717.svg)](https://doi.org/10.5281/zenodo.3585717)
 
 To run the analyses, please download the complete folder. The folder named "Rcode" contains 14 scripts, which are named 1_ to 10_ . These scripts can be run a standard desktop machine.
 
