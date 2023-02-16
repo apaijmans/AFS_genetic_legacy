@@ -1,4 +1,5 @@
 # Analysis workflow for "The genetic legacy of extreme exploitation in a polar vertebrate", Paijmans et al. Sci Rep 10, 5089 (2020)
+[![DOI](https://zenodo.org/badge/229044599.svg)](https://zenodo.org/badge/latestdoi/229044599)
 
 ## Overview
 
